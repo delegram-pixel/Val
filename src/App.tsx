@@ -80,7 +80,7 @@ hold your hands, and look into your pretty eyes.`,
           transition={{ duration: 0.5 }}
         >
           <Confetti width={width} height={height} />
-          <div className="fixed top-0 left-0 w-full h-full bg-[#9932cc] flex flex-col items-center justify-center">
+          <div className="fixed top-0 left-0 flex w-full h-full bg-[#9932cc] flex flex-col items-center justify-center">
             <motion.h1
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
@@ -88,12 +88,24 @@ hold your hands, and look into your pretty eyes.`,
               className="text-white text-4xl font-bold"
             >
               Yayyyyyyy!!!!!
+
+              
             </motion.h1>
             <img
               src="/character/yayyyy.png"
               alt=""
               className="w-40 animate-bounce"
             />
+              <motion.h1
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.3, type: "spring" }}
+              className="text-white text-2xl font-bold"
+            >
+              I knew you will say yes!!!
+
+              
+            </motion.h1>
           </div>
         </motion.div>
       )}
